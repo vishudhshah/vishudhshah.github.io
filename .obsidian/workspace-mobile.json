@@ -1,0 +1,167 @@
+{
+  "main": {
+    "id": "c82026ec98515da5",
+    "type": "split",
+    "children": [
+      {
+        "id": "11a336b02fa71d63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "320b9bb0e157568e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Summer 24.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2e54455d78abc57",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f3ce8b151e359e0f",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "f8b17b92fd67d377",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "21ff2bca1d7c99c0",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "6cc4dc7a08e53502",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      },
+      {
+        "id": "593baf99f1a84b83",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "b33a0646eef7b65b",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "f1098a982d2858ab",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Summer 24.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "6ba5c846cc973e71",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Summer 24.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "97d0bd23c1725c98",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Summer 24.md"
+          }
+        }
+      },
+      {
+        "id": "b909c79a45685e1f",
+        "type": "leaf",
+        "state": {
+          "type": "reminder-list",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "320b9bb0e157568e",
+  "lastOpenFiles": [
+    "Tasks.md",
+    "UCSD.md",
+    "Anime.md",
+    "Hikes.md",
+    "Hikes/Mission Trails Regional Park Trail 1.md",
+    "Hikes/Mission Trails Regional Park Trail 2.md",
+    "Classes/Winter 24/ECE 15.md",
+    "Classes/Winter 24/DSC 10.md"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "migrated": 4,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "RiSunFill",
+      "CoSun",
+      "TiBow",
+      "RiLock2Fill",
+      "IbMessageBubbleWithEllipses"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": true,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":"
+  },
+  "Hikes.md": "FasMountainSun",
+  "Quotes.md": "LiQuote",
+  "UCSD.md": "FasGraduationCap",
+  "Thoughts.md": "RiLock2Fill",
+  "Bhagavad Gita.md": "TiBow",
+  "Tasks.md": "BoBxTask",
+  "Summer 24.md": "RiSunFill"
+}
