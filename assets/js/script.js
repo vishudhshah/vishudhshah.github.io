@@ -7,6 +7,8 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
+// SIDEBAR LOGIC
+
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
 const sidebarBtn = document.querySelector("[data-sidebar-btn]");
@@ -15,6 +17,8 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
+
+// TESTIMONIALS LOGIC
 
 // // testimonials variables
 // const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
@@ -55,65 +59,69 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 
 
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-select-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+// PROJECT FILTERING LOGIC
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+// // custom select variables
+// const select = document.querySelector("[data-select]");
+// const selectItems = document.querySelectorAll("[data-select-item]");
+// const selectValue = document.querySelector("[data-select-value]");
+// const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-    selectItems[i].addEventListener("click", function () {
+// select.addEventListener("click", function () { elementToggleFunc(this); });
 
-        let selectedValue = this.innerText.toLowerCase();
-        selectValue.innerText = this.innerText;
-        elementToggleFunc(select);
-        filterFunc(selectedValue);
+// // add event in all select items
+// for (let i = 0; i < selectItems.length; i++) {
+//     selectItems[i].addEventListener("click", function () {
 
-    });
-}
+//         let selectedValue = this.innerText.toLowerCase();
+//         selectValue.innerText = this.innerText;
+//         elementToggleFunc(select);
+//         filterFunc(selectedValue);
 
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
+//     });
+// }
 
-const filterFunc = function (selectedValue) {
+// // filter variables
+// const filterItems = document.querySelectorAll("[data-filter-item]");
 
-    for (let i = 0; i < filterItems.length; i++) {
+// const filterFunc = function (selectedValue) {
 
-        if (selectedValue === "all") {
-            filterItems[i].classList.add("active");
-        } else if (selectedValue === filterItems[i].dataset.category) {
-            filterItems[i].classList.add("active");
-        } else {
-            filterItems[i].classList.remove("active");
-        }
+//     for (let i = 0; i < filterItems.length; i++) {
 
-    }
+//         if (selectedValue === "all") {
+//             filterItems[i].classList.add("active");
+//         } else if (selectedValue === filterItems[i].dataset.category) {
+//             filterItems[i].classList.add("active");
+//         } else {
+//             filterItems[i].classList.remove("active");
+//         }
 
-}
+//     }
 
-// add event in all filter button items for large screen
-let lastClickedBtn = filterBtn[0];
+// }
 
-for (let i = 0; i < filterBtn.length; i++) {
+// // add event in all filter button items for large screen
+// let lastClickedBtn = filterBtn[0];
 
-    filterBtn[i].addEventListener("click", function () {
+// for (let i = 0; i < filterBtn.length; i++) {
 
-        let selectedValue = this.innerText.toLowerCase();
-        selectValue.innerText = this.innerText;
-        filterFunc(selectedValue);
+//     filterBtn[i].addEventListener("click", function () {
 
-        lastClickedBtn.classList.remove("active");
-        this.classList.add("active");
-        lastClickedBtn = this;
+//         let selectedValue = this.innerText.toLowerCase();
+//         selectValue.innerText = this.innerText;
+//         filterFunc(selectedValue);
 
-    });
+//         lastClickedBtn.classList.remove("active");
+//         this.classList.add("active");
+//         lastClickedBtn = this;
 
-}
+//     });
+
+// }
 
 
+
+// CONTACT FORM LOGIC
 
 // contact form variables
 const form = document.querySelector("[data-form]");
