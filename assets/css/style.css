@@ -981,7 +981,7 @@ main {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #PROJECTS
 \*-----------------------------------*/
 
 .filter-list {
@@ -1410,7 +1410,7 @@ textarea.form-input::-webkit-resizer {
 
 
     /**
-   * #PORTFOLIO, BLOG 
+   * #PROJECTS, BLOG 
    */
 
     .project-img,
@@ -1718,7 +1718,7 @@ textarea.form-input::-webkit-resizer {
 
 
     /**
-   * #PORTFOLIO, BLOG
+   * #PROJECTS, BLOG
    */
 
     .project-img,
@@ -1833,7 +1833,7 @@ textarea.form-input::-webkit-resizer {
 
 
     /**
-   * PORTFOLIO
+   * PROJECTS
    */
 
     .article-title {
@@ -1867,7 +1867,7 @@ textarea.form-input::-webkit-resizer {
         color: var(--orange-yellow-crayola);
     }
 
-    /* portfolio and blog grid */
+    /* projects and blog grid */
 
     .project-list,
     .blog-posts-list {
@@ -2000,7 +2000,7 @@ textarea.form-input::-webkit-resizer {
 
 
     /**
-   * PORTFOLIO
+   * PROJECTS
    */
 
     .project-list {
