@@ -162,7 +162,7 @@ form.addEventListener("submit", function(e) {
     })
     .then(() => {
         // success - show alert and reset form
-        alert("Form submitted successfully!");
+        alert("Form submitted successfully!\nVishudh will get back to you soon.");
         form.reset();
         
         // reset button state
@@ -171,7 +171,7 @@ form.addEventListener("submit", function(e) {
     })
     .catch((e) => {
         // error handling
-        alert("There was an error submitting the form. Please try again.");
+        alert("There was an error submitting the form. Please try again later.\nAlternatively, you can reach out to Vishudh using his contact details provided in the sidebar.");
         console.error("Error details: ", e);
 
         // reset button state
