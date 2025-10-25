@@ -190,20 +190,51 @@ form.addEventListener("submit", function(e) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-    navigationLinks[i].addEventListener("click", function () {
-
+// function to navigate to a specific page
+const navigateToPage = function(pageName) {
+    // First, remove active class from all pages and links
+    for (let i = 0; i < pages.length; i++) {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+    }
+    
+    // Then add active class to the target page and link
+    // Use requestAnimationFrame to ensure smooth transition
+    requestAnimationFrame(() => {
         for (let i = 0; i < pages.length; i++) {
-            if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+            if (pageName === pages[i].dataset.page) {
                 pages[i].classList.add("active");
                 navigationLinks[i].classList.add("active");
                 window.scrollTo(0, 0);
-            } else {
-                pages[i].classList.remove("active");
-                navigationLinks[i].classList.remove("active");
             }
         }
-
     });
 }
+
+// add event to all nav links
+for (let i = 0; i < navigationLinks.length; i++) {
+    navigationLinks[i].addEventListener("click", function (e) {
+        // The hash will be set by the anchor tag, and the hashchange event will handle navigation
+        const pageName = this.getAttribute('href').substring(1); // Remove the # from href
+        navigateToPage(pageName);
+    });
+}
+
+// handle hash changes (back/forward navigation and direct URL access)
+window.addEventListener('hashchange', function() {
+    const hash = window.location.hash.substring(1); // Remove the # from hash
+    if (hash) {
+        navigateToPage(hash);
+    }
+});
+
+// handle initial page load with hash
+window.addEventListener('DOMContentLoaded', function() {
+    const hash = window.location.hash.substring(1); // Remove the # from hash
+    if (hash) {
+        navigateToPage(hash);
+    } else {
+        // Default to 'about' page if no hash
+        navigateToPage('about');
+    }
+});

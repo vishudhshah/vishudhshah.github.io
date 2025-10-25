@@ -220,20 +220,23 @@ article {
 
 article {
     display: none;
+    opacity: 0;
 }
 
 article.active {
     display: block;
-    animation: fade 0.5s ease backwards;
+    animation: fade 0.3s ease forwards;
 }
 
 @keyframes fade {
     0% {
         opacity: 0;
+        transform: translateY(10px);
     }
 
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
