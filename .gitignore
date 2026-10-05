@@ -1,1 +1,6 @@
 .DS_Store
+
+# Local site build and Python caches
+_site/
+__pycache__/
+*.py[cod]
