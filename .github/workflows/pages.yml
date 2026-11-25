@@ -22,7 +22,7 @@ jobs:
     timeout-minutes: 15
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -40,4 +40,12 @@ jobs:
           path: _site
       - name: Deploy
         id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Wait before retrying deployment
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 10
+      - name: Retry deployment
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
